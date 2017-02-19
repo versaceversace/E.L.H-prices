@@ -1,0 +1,35 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.group:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+#logoelh {
+	width: 5%;
+	height: 60px;
+}
+#checklist{
+	float: left;
+	margin: 100px 150px 100px 80px;
+	width: 20%;
+}
+#backgroundmenu {
+	display: inline-block;
+	float: center;
+	width: 65%;
+	height: 800px;
+	opacity: 0.7;
+	position: relative;
+	margin: -100px 100px 1px -100px;
+}
+#main-options {
+	position: absolute;
+	margin: -510px 10px 100px 400px;
+}
+body {
+	background-color: #26a69a;
+}
