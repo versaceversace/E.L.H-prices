@@ -24,9 +24,32 @@ body {
 .img-gogo1 {
    position: relative;
    width: 20%; /* for IE 6 */
+
 	 padding-left: 403px;
 }
-
+#bookgogo1 {
+	width: 150px;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 150px;
+}
+#taggogo1 {
+	width: 350px;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: -610px;
+}
+span#pricetagonchatone {
+	position: absolute;
+	top: 230px;
+	margin-left: 85px;
+	margin-top: 237px;
+	font-weight: 200;
+	font-size: 30px;
+	letter-spacing: -1px;
+	padding: 10px;
+	color: white;
+}
 h4 {
    position: absolute;
    top: 40px;
@@ -39,10 +62,22 @@ h4 span {
    font: bold 24px/45px;
    padding: 10px;
 }
-
-.gogo2{
-
+span#pricetagone {
+	position: absolute;
+	top: 230px;
+	margin-left: 145px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 45px;
+	padding: 10px;
+	color: #26a69a;
 }
-.gogo3{
-
+#titlegogo1 {
+	word-break: break-all;
+	margin-top: -940px;
+	padding-left: 990px;
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: -2px;
+	color: white;
 }
