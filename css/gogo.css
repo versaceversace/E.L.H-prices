@@ -8,6 +8,22 @@
 	display: table;
 	clear: both;
 }
+
+  // Class for when element is above threshold
+  .pin-top {
+    position: relative;
+  }
+
+  // Class for when element is below threshold
+  .pin-bottom {
+    position: relative;
+  }
+
+  // Class for when element is pinned
+  .pinned {
+    position: fixed !important;
+  }
+
 #logoelh {
 	width: 5%;
 	height: 60px;
@@ -41,7 +57,7 @@ body {
 }
 span#pricetagonchatone {
 	position: absolute;
-	top: 230px;
+	top: 260px;
 	margin-left: 85px;
 	margin-top: 237px;
 	font-weight: 200;
@@ -64,13 +80,125 @@ h4 span {
 }
 span#pricetagone {
 	position: absolute;
-	top: 230px;
+	top: 250px;
 	margin-left: 145px;
 	width: 100%;
 	font-weight: bold;
 	font-size: 45px;
 	padding: 10px;
 	color: #26a69a;
+}
+#gogo1btn {
+	position: absolute;
+	margin-top: 500px;
+	margin-left: 168px;
+	width: 170px;
+
+}
+#separatorgogo1 {
+height:5px;
+background:#717171;
+border-bottom:1px solid #313030;
+position: absolute;
+margin-top: 150px;
+}
+#dividergogo1 {
+border-left: 1px solid white;
+background: white;
+width: 350px;
+height: 1px;
+position: absolute;
+right: -430px;
+top: 600px;
+}
+#dividergogo1_2 {
+border-left: 1px solid white;
+background: white;
+width: 350px;
+height: 1px;
+position: absolute;
+right: -430px;
+top: 680px;
+}
+#dividergogo1_3 {
+border-left: 1px solid white;
+background: white;
+width: 350px;
+height: 1px;
+position: absolute;
+right: -430px;
+top: 760px;
+}
+#durationgogo1 {
+	position: absolute;
+	margin-top: 600px;
+	margin-left: 180px;
+	display: inline;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 130px;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+#durationgogo1_2 {
+	position: absolute;
+	margin-top: 670px;
+	margin-left: 180px;
+	display: inline;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 170px;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+#durationgogo1_3 {
+	position: absolute;
+	margin-top: 760px;
+	margin-left: 150px;
+	display: inline;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 220px;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+#acreditogogo1 {
+	position: absolute;
+	margin-top: 810px;
+	margin-left: 30px;
+	display: inline;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 220px;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+#decontadogogo1 {
+	position: absolute;
+	margin-top: 810px;
+	margin-left: 270px;
+	display: inline;
+	overflow:hidden;
+	white-space: normal;
+	width: 220px;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+#smallgogo1 {
+	position: absolute;
+	margin-top: 880px;
+	margin-left: 170px;
+	display: inline;
+	overflow: hidden;
+	white-space: normal;
+	width: 300px;
+	color: white;
+	font-size: 16px;
 }
 #titlegogo1 {
 	word-break: break-all;
@@ -81,3 +209,13 @@ span#pricetagone {
 	letter-spacing: -2px;
 	color: white;
 }
+#textgogo1 {
+	margin-top: -740px;
+	padding-left: 920px;
+	text-align: justify;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: white;
+}
+
+/* GOGO 2 CSS */
