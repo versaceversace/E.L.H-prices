@@ -1,7 +1,7 @@
 $(document).ready(function(){
    $('.tooltipped').tooltip({delay: 50, tooltip: 'some text', html: true});
    $('.carousel.carousel-slider').carousel({fullWidth: true});
-
+   $('.parallax').parallax();
  });
  var options = [
    {selector: '#staggered-test', offset: 400, callback: function(el) {
