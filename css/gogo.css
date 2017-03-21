@@ -2,11 +2,17 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 }
+
 .group:after{
 	content: "";
 	display: table;
 	clear: both;
+}
+.brand-logo {
+	font-weight: 500;
+	margin-left: 30px;
 }
 #logoelh {
 	width: 5%;
@@ -17,12 +23,50 @@
 	background-color: #26a69a;
 }
 */
+html, body {
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background: linear-gradient(270deg, #2b3d4d, #18a2f0, #18f0b8);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
+}
+
+
+    @-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+
+/* body {
 	background-color: #26a69a;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-}
+
+} */
+
+
 
 main {
 	flex: 1 0 auto;
@@ -188,7 +232,7 @@ top: 460px;
 }
 #titlegogo1 {
 	word-break: keep-all;
-	margin-top: -600px;
+	margin-top: -580px;
 	padding-left: 850px;
 	text-align: center;
 	font-weight: 500;
@@ -196,11 +240,12 @@ top: 460px;
 	color: white;
 }
 #textgogo1 {
-	margin-top: -450px;
+	margin-top: -400px;
 	margin-right: 15px;
 	padding-left: 860px;
 	text-align: justify;
 	font-weight: 400;
+	font-size: 19px;
 	letter-spacing: 1px;
 	color: white;
 }
@@ -216,4 +261,33 @@ width:100% !important;
 
 }
 
+#staggered-test {
+	margin-top: 300px;
+	padding-left: 20px;
+	color: white;
+	margin-left: -50px;
+}
+h4 {
+	font-weight: 200;
+
+}
+#staggered-test li {
+	opacity: 0;
+	display: inline-block;
+	margin-left: 10px;
+	padding-right: 300px;
+	word-break: keep-all;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+
+#iconset {
+	margin-top: 200px;
+	color: white;
+	margin-left: 150px;
+}
+#iconset li{
+	opacity: 0;
+}
 /* GOGO 2 CSS */

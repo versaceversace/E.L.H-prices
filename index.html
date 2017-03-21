@@ -5,13 +5,15 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/style.css" type="text/css" />
-
+      <link rel="stylesheet" href="css/animate.css" type="text/css">
       <!--Disponible para mobiles-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
       <header>
+
+        <div class="navbar-fixed">
       <nav>
     <div class="nav-wrapper blue">
       <img id="logoelh" src="images/logo.jpg"/>
@@ -23,23 +25,27 @@
       </ul>
     </div>
   </nav>
+  </div>
 </header>
 <main>
-  <img id="checklist" src="images/checklist.svg"/>
+
+  <img class="animated slideInUp" id="checklist" src="images/checklist.svg"/>
+
+    <div class="animated fadeIn">
       <div class="container left-align">
         <div class="row">
           <div id="main-btns">
             <img id="backgroundmenu" src="images/backgroundmenu.svg" />
             <div id="main-options">
       <a href="sites/gogo.html" class="waves-effect waves-light btn-large">Gogo Loves English</a>
-      <p><span class="grey-text text-darken-1">*Para niños de 8-12 años de edad</span></p>
+      <p><span class="grey-text text-darken-1">* Para niños de 8-12 años de edad</span></p>
       <a class="waves-effect waves-light btn-large">Speed Way o Top Notch</a>
-      <p><span class="grey-text text-darken-1">*Adolescentes y Adultos</span></p>
+      <p><span class="grey-text text-darken-1">* Adolescentes y Adultos</span></p>
             </div>
          </div>
       </div>
     </div>
-
+</div>
 </main>
 
     <div class="footer">
@@ -77,5 +83,7 @@
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
     </body>
   </html>

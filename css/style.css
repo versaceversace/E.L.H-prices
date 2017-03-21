@@ -8,6 +8,10 @@
 	display: table;
 	clear: both;
 }
+.brand-logo {
+	font-weight: 500;
+	margin-left: 30px;
+}
 #logoelh {
 	width: 5%;
 	height: 60px;
@@ -22,7 +26,7 @@
 	float: center;
 	width: 65%;
 	height: 800px;
-	opacity: 0.7;
+	opacity: 0.6;
 	position: relative;
 	margin: -100px 100px 1px -100px;
 }
@@ -32,4 +36,9 @@
 }
 body {
 	background-color: #26a69a;
+}
+p {
+ text-align: justify;
+ font-weight: 300;
+
 }
