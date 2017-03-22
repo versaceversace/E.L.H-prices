@@ -1,0 +1,283 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+.group:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.brand-logo {
+	font-weight: 500;
+	margin-left: 30px;
+}
+#logoelh {
+	width: 5%;
+	height: 60px;
+}
+
+body {
+	background-color: #26a69a;
+  display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+h2 {
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+h3 {
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+#weekday {
+  margin-left: 170px;
+}
+#weekends {
+  margin-right: 220px;
+}
+/* sticker one side*/
+img {
+  width: 70%;
+}
+#sticker1 {
+  padding-left: 30px;
+  margin-left: 70px;
+}
+#sticker2 {
+  padding-left: 30px;
+  margin-left: 90px;
+}
+#priceontopofimage {
+  position: absolute;
+  margin-top: -620px;
+  margin-left: 250px;
+}
+#weekdayprice {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #05c8ce;
+  margin-left: -10px;
+}
+#weekendprice {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #05c8ce;
+  margin-left: 690px;
+  margin-top: -60px;
+}
+#ofertaweekday {
+  position: absolute;
+  margin-top: -800px;
+  margin-left: 270px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+#ofertaweekend {
+  position: absolute;
+  margin-top: -800px;
+  margin-left: 970px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+#dividerintroductorio1 {
+  border-left: 1px solid white;
+  background: white;
+  width: 340px;
+  height: 1px;
+  position: absolute;
+  margin-left: 150px;
+  top: 700px;
+}
+#durationintroductorio1{
+  position: absolute;
+  margin-top: -440px;
+  margin-left: 248px;
+  display: inline;
+  width: 130px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+#dividerintroductorio1_2 {
+  border-left: 1px solid white;
+  background: white;
+  width: 340px;
+  height: 1px;
+  position: absolute;
+  margin-left: 150px;
+  top: 790px;
+}
+#durationintroductorio1_2{
+  position: absolute;
+  margin-top: -355px;
+  margin-left: 237px;
+  display: inline;
+  overflow: hidden;
+  width: 190px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+#dividerintroductorio1_3 {
+  border-left: 1px solid white;
+  background: white;
+  width: 340px;
+  height: 1px;
+  position: absolute;
+  margin-left: 150px;
+  top: 870px;
+}
+#durationintroductorio1_3{
+  position: absolute;
+  margin-top: -270px;
+  margin-left: 237px;
+  display: inline;
+  overflow: hidden;
+  width: 190px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+#introductoriosmall1 {
+	position: absolute;
+	margin-top: -80px;
+	margin-left: 240px;
+	display: inline;
+	overflow: hidden;
+	white-space: normal;
+	width: 300px;
+	color: white;
+	font-size: 14px;
+}
+#acreditointroductorio1 {
+	position: absolute;
+	margin-top: -160px;
+	margin-left: 150px;
+	display: inline;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 130px;
+	color: white;
+	font-weight: 400;
+	font-size: 14px;
+}
+#decontadointroductorio1 {
+	position: absolute;
+	margin-top: -160px;
+	margin-left: 350px;
+	display: inline;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 140px;
+	color: white;
+	font-weight: 400;
+	font-size: 14px;
+}
+#dividerintroductorio2 {
+  border-left: 1px solid white;
+  background: white;
+  width: 340px;
+  height: 1px;
+  position: absolute;
+  margin-left: 850px;
+  top: 700px;
+}
+#durationintroductorio2 {
+  position: absolute;
+  margin-top: -440px;
+  margin-left: 950px;
+  display: inline;
+  width: 130px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+#dividerintroductorio2_2{
+  border-left: 1px solid white;
+  background: white;
+  width: 340px;
+  height: 1px;
+  position: absolute;
+  margin-left: 850px;
+  top: 790px;
+}
+#durationintroductorio2_2 {
+  position: absolute;
+  margin-top: -355px;
+  margin-left: 945px;
+  display: inline;
+  overflow: hidden;
+  width: 190px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+#dividerintroductorio2_3 {
+  border-left: 1px solid white;
+  background: white;
+  width: 340px;
+  height: 1px;
+  position: absolute;
+  margin-left: 850px;
+  top: 870px;
+}
+#durationintroductorio2_3 {
+  position: absolute;
+  margin-top: -270px;
+  margin-left: 940px;
+  display: inline;
+  overflow: hidden;
+  width: 190px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+#introductoriosmall2 {
+	position: absolute;
+	margin-top: -80px;
+	margin-left: 940px;
+	display: inline;
+	overflow: hidden;
+	white-space: normal;
+	width: 300px;
+	color: white;
+	font-size: 14px;
+}
+#acreditointroductorio2 {
+	position: absolute;
+	margin-top: -160px;
+	margin-left: 850px;
+	display: inline;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 130px;
+	color: white;
+	font-weight: 400;
+	font-size: 14px;
+}
+#decontadointroductorio2 {
+	position: absolute;
+	margin-top: -160px;
+	margin-left: 1070px;
+	display: inline;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 140px;
+	color: white;
+	font-weight: 400;
+	font-size: 14px;
+}

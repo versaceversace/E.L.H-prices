@@ -1,0 +1,46 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.group:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.brand-logo {
+	font-weight: 500;
+	margin-left: 30px;
+}
+#logoelh {
+	width: 5%;
+	height: 60px;
+}
+#backgroundmenu {
+	display: inline-block;
+	float: center;
+	width: 65%;
+	height: 800px;
+	opacity: 0.6;
+	position: relative;
+	margin: -100px 100px 1px -100px;
+}
+#main-options {
+	position: absolute;
+	margin: -510px 10px 100px 400px;
+}
+body {
+	background-color: #26a69a;
+}
+.box_round {
+  margin-top: 100px;
+  -moz-border-radius: 12px; /* FF1+ */
+   -webkit-border-radius: 12px; /* Saf3-4 */
+           border-radius: 12px; /* Opera 10.5, IE 9, Saf5, Chrome */
+ }
+
+#sendbtn {
+ margin-left: 600px;
+ height: 50px;
+ margin-bottom: 30px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <!--Importaciones-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="../css/contacto.css" type="text/css" />
+      <link rel="stylesheet" href="../css/animate.css" type="text/css" />
+
+      <!--Disponible para mobiles-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <header>
+
+      <div class="navbar-fixed">
+      <nav>
+    <div class="nav-wrapper blue">
+      <img id="logoelh" src="../images/logo.jpg"/>
+      <a href="../index.html" class="brand-logo"> Academia ELH</a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Nosotros</a></li>
+        <li><a href=../index.html>Cursos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</header>
+
+<main>
+
+  <div class="box_round" style="background-color:white">
+  <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Nombre y Apellido</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Teléfono</label>
+          </div>
+
+        <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="incorrecto" data-success="correcto">Correo eléctronico</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Mensaje</label>
+        </div>
+      </div>
+      </form>
+    </div>
+    <button id="sendbtn" class="btn waves-effect waves-light" type="submit" name="action">Enviar
+       <i class="material-icons right">send</i>
+     </button>
+</div>
+
+
+
+</main>
+
+<div class="footer">
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">ELH Simon Rodriguez</h5>
+          <p class="grey-text text-lighten-4">
+            <i class="tiny material-icons">location_on</i> Av. Montilla con Calle Carvajal, Edificio La Fuente.	Barinas	5201	Venezuela
+          </br>
+        </br>
+          <i class="tiny material-icons">call</i> 0273-5528615
+</p>
+
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Social</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/academiaelh">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.twitter.com/academiaelh">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/academiaelhb">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 Derechos Reservados
+      <a class="grey-text text-lighten-4 right" href="#!">Mas información</a>
+      </div>
+    </div>
+  </footer>
+</div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/contacto.js"></script>
+
+</body>
+</html>
