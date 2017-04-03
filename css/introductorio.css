@@ -114,3 +114,42 @@ h5.header.col.s12.light {
 	width: 50px;
 	height: 70px;
 }
+.info-text {
+	font-size: 20px;
+}
+#intrdbook {
+	width: 155px;
+	height: 170px;
+	float: left;
+	padding-right: 13px;
+}
+#basicbook {
+	width: 155px;
+	height: 170px;
+	float: right;
+	padding-right: 13px;
+}
+#intermediatebook {
+	width: 155px;
+	height: 170px;
+	float: left;
+	padding-right: 13px;
+}
+#topnotchbook {
+	width: 155px;
+	height: 170px;
+	float: right;
+	padding-right: 13px;
+}
+#first li {
+	opacity: 0;
+}
+#second li {
+	opacity: 0;
+}
+#third li {
+	opacity: 0;
+}
+#fourth li {
+	opacity: 0;
+}
