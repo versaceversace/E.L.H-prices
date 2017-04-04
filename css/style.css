@@ -1,3 +1,9 @@
+	@-webkit-keyframes color-change-2x{0%
+		{background:#19dcea}100%
+		{background:#28c94b}}@keyframes color-change-2x
+		{0%{background:#19dcea}100%{background:#2e69c1}}
+	@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+	@-webkit-keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -35,15 +41,26 @@
 	margin: 5px;
 }
 body {
-	background-color: #26a69a;
 	height: auto;
-
+	-webkit-animation: color-change-2x 10s linear infinite alternate both;
+	-moz-animation: color-change-2x 10s linear infinite alternate both;
+	animation: color-change-2x 10s linear infinite alternate both;
 }
+.card-title {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	-moz-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+.card p {
+	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+	-moz-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+	animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+}
+	
 p {
  text-align: justify;
  font-weight: 300;
 }
-
 footer {
 	padding-top: 200px;
 }
