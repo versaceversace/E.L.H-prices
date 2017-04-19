@@ -1,27 +1,7 @@
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
-
   /* Rules below not implemented in browsers yet */
   -o-user-select: none;
   user-select: none;
-}
-.group:after{
-	content: "";
-	display: table;
-	clear: both;
-}
-.brand-logo {
-	font-weight: 500;
-	margin-left: 30px;
-}
-#logoelh {
-	width: 5%;
-	height: 60px;
 }
 
 body {
@@ -41,9 +21,7 @@ h3 {
 }
 
 /* sticker one side*/
-img {
 
-}
 #sticker1 {
 position: relative;
 }
@@ -53,9 +31,8 @@ position: relative;
 
 #acreditointroductorio1 {
 	position: absolute;
-	margin-top: -120px;
-	margin-left: -150px;
-	display: inline;
+	margin-top: -100px;
+	margin-left: -160px;
 	overflow:hidden;
 	white-space: nowrap;
 	width: 130px;
@@ -66,8 +43,7 @@ position: relative;
 }
 #decontadointroductorio1 {
 	position: absolute;
-	margin-top: -120px;
-	display: inline;
+	margin-top: -100px;
 	overflow:hidden;
 	white-space: normal;
 	width: 150px;
@@ -78,9 +54,8 @@ position: relative;
 
 #acreditointroductorio2 {
 	position: absolute;
-	margin-top: -120px;
+	margin-top: -100px;
 	margin-left: -150px;
-	display: inline;
 	overflow:hidden;
 	white-space: nowrap;
 	width: 130px;
@@ -90,8 +65,7 @@ position: relative;
 }
 #decontadointroductorio2 {
 	position: absolute;
-	margin-top: -120px;
-	display: inline;
+	margin-top: -100px;
 	overflow:hidden;
 	white-space: normal;
 	width: 150px;
@@ -152,4 +126,14 @@ h5.header.col.s12.light {
 }
 #fourth li {
 	opacity: 0;
+}
+.card-panel {
+	background-color: #05b9be;
+}
+.insidecard {
+	color: white;
+	font-weight: 200;
+	font-size: 16px;
+	word-break: keep-all;
+	
 }

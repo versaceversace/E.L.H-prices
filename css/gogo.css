@@ -1,56 +1,22 @@
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-user-select: none; /* Chrome/Safari */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+ */
-
 	/* Rules below not implemented in browsers yet */
 	-o-user-select: none;
 	user-select: none;
 }
 
-.group:after{
-	content: "";
-	display: table;
-	clear: both;
-}
-.brand-logo {
-	font-weight: 500;
-	margin-left: 30px;
-}
-#logoelh {
-	width: 5%;
-	height: 60px;
-}
 /* body {
   height: 3000px;
 	background-color: #26a69a;
 }
 */
-html, body {
-	width: 100%;
-	height: 100%;
-    margin: 0;
-    padding: 0;
-		background-image: linear-gradient(0deg, #2af598 0%, #009efd 100%);
-		background-repeat: no-repeat;
- 		background-attachment: fixed;
-}
 
-body {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
 
-/* body {
+/* Old body {
 	background-color: #26a69a;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-
+!JUST FOR REFERENCE!
 } */
 
 
@@ -61,8 +27,8 @@ body {
 #mainimage {
 height: auto;
 padding-left: 250px;
-
 }
+
 #bookgogo1 {
 	width: 150px;
 	position: absolute;
@@ -79,7 +45,7 @@ padding-left: 250px;
 span#pricetagonchatone {
 	position: absolute;
 	margin-left: 76px;
-	margin-top: 340px;
+	margin-top: 343px;
 	font-weight: 200;
 	font-size: 30px;
 	letter-spacing: -1px;
@@ -88,7 +54,7 @@ span#pricetagonchatone {
 }
 h4 {
    position: absolute;
-   margin-top: 60px;
+   margin-top: 20px;
 	 margin-left: 200px;
 }
 h4 span {
@@ -99,46 +65,23 @@ h4 span {
 }
 span#pricetagone {
 	position: absolute;
-	margin-top: 160px;
-	margin-left: 170px;
+	margin-top: 140px;
+	margin-left: 177px;
 	font-weight: bold;
-	font-size: 31px;
+	font-size: 27px;
 	padding: 10px;
 	color: #26a69a;
+	overflow: hidden;
+	width: 150px;
+	
 }
 
-#dividergogo1 {
-border-left: 1px solid white;
-background: white;
-width: 240px;
-height: 1px;
-position: absolute;
-right: -370px;
-top: 350px;
-}
-#dividergogo1_2 {
-border-left: 1px solid white;
-background: white;
-width: 240px;
-height: 1px;
-position: absolute;
-right: -370px;
-top: 400px;
-}
-#dividergogo1_3 {
-border-left: 1px solid white;
-background: white;
-width: 240px;
-height: 1px;
-position: absolute;
-right: -370px;
-top: 460px;
-}
+
 #durationgogo1 {
 	position: absolute;
 	margin-top: 270px;
 	margin-left: 180px;
-	display: inline;
+	
 	overflow:hidden;
 	white-space: nowrap;
 	width: 130px;
@@ -150,7 +93,6 @@ top: 460px;
 	position: absolute;
 	margin-top: 330px;
 	margin-left: 165px;
-	display: inline;
 	overflow:hidden;
 	white-space: nowrap;
 	width: 170px;
@@ -162,7 +104,6 @@ top: 460px;
 	position: absolute;
 	margin-top: 390px;
 	margin-left: 150px;
-	display: inline;
 	overflow:hidden;
 	white-space: nowrap;
 	width: 220px;
@@ -174,7 +115,6 @@ top: 460px;
 	position: absolute;
 	margin-top: 450px;
 	margin-left: 108px;
-	display: inline;
 	overflow:hidden;
 	white-space: nowrap;
 	width: 130px;
@@ -186,7 +126,6 @@ top: 460px;
 	position: absolute;
 	margin-top: 450px;
 	margin-left: 243px;
-	display: inline;
 	overflow:hidden;
 	white-space: normal;
 	width: 150px;
@@ -198,11 +137,11 @@ top: 460px;
 	position: absolute;
 	margin-top: 520px;
 	margin-left: 182px;
-	display: inline;
 	overflow: hidden;
 	white-space: normal;
 	color: white;
 	font-size: 12px;
+	width: 200px;
 }
 #titlegogo1 {
 	position: relative;
@@ -243,6 +182,7 @@ width:100% !important;
 .promo-caption {
  font-weight: 200;
  font-size: 30px;
+ text-align: center;
 }
 #staggered-test li {
 	opacity: 0;
@@ -250,5 +190,11 @@ width:100% !important;
 	word-break: keep-all;
 	letter-spacing: -1px;
 }
-
+.btn {
+	width: 50%;
+}
+h2 {
+	text-align: center;
+	font-size: 60px;
+}
 /* GOGO 2 CSS */

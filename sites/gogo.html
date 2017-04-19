@@ -1,35 +1,37 @@
-<!DOCTYPE html>
-  <html lang="es">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
     <head>
-      <!--Importaciones-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Gogo Loves English</title>
+        <meta name="description" content="Precios y descripción para Gogo Barinas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <!--Importaciones-Google-Materialize-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="../css/gogo.css" type="text/css" />
       <link rel="stylesheet" href="../css/animate.css" type="text/css" />
 
-      <!--Disponible para mobiles-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+    <body ng-app="gogo">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <body>
-      <header>
 
-      <div class="navbar-fixed">
-      <nav>
-    <div class="nav-wrapper blue">
-      <img id="logoelh" src="../images/logo.jpg"/>
-      <a href="../index.html" class="brand-logo"> Academia ELH</a>
+        <header>
+            <div ng-include="'../includes/header.htm'"></div>
+      </header>
 
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Nosotros</a></li>
-        <li><a href=../index.html>Cursos</a></li>
-        <li><a href="http://www.academiaelh.com.ve/web/index.php/contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-</header>
-
+        <div class="main-container">
+            <div class="main wrapper clearfix">
 
 <main>
   <div class="fixed-action-btn"> <!-- FAB Menu buttons -->
@@ -44,77 +46,76 @@
   </div>
 
     <div class="animated fadeIn">
-  <div class="container">
 
+<div class="section">
     <div class="row">
-<div class="col s4">
+<div class="col s12 m4">
 
-  <img id="taggogo1" src="../images/chatpopup.png"/> <!-- chat popup -->
+  <img class="responsive-img" id="taggogo1" src="../images/chatpopup.png"/> <!-- chat popup -->
   <span id="pricetagonchatone">12 Lecciones</span>
-  <div class="gogo1">
-  <img id="bookgogo1" src="../images/book.svg"/>
-  <div class="img-gogo1">
+ 
+  <img class="responsive-img" id="bookgogo1" src="../images/book.svg"/>
 </div>
 </div>
-<div class="col s4 center-align" id="mainimage">
+<div class="row">
+<div class="col s12 m4" id="mainimage">
   <h4 class="center-align"><span>Oferta</span></h4>
-  <span id="pricetagone">65.000 Bs</span>
-  <div class="divider"></div>
-  <div class="section"> <!-- Text on the price sticker -->
+    <div ng-init="price='65.000'">
+      <span class="flow-text" id="pricetagone">{{price}} Bs</span> <!-- Price HERE -->
+    </div>
+   <!-- Text on the price sticker -->
 
-<div id="dividergogo1" class="divider"></div>
-  </div>
-<span id="durationgogo1"><i class="small material-icons left">schedule</i>4 meses</span>
-  <div id="dividergogo1_2" class="divider"></div>
-  <span id="durationgogo1_2"><i class="small material-icons left">mode_edit</i>Libro incluido</span>
-  <div id="dividergogo1_3" class="divider"></div>
-  <span id="durationgogo1_3"><i class="small material-icons left">visibility</i>Opciones de pago</span>
-  <a id="acreditogogo1" class="btn tooltipped teal-lighten-2" data-position="bottom" data-delay="50" data-tooltip="Inscripción 35.000 Bs <br> 4 Mensualidades 10.000 Bs c/u <br> Inicial 45.000 Bs <br><br> <strong>Inversión Total 75.000 Bs</strong>">A credito</a>
-  <a id="decontadogogo1" class="btn tooltipped teal-lighten-2" data-position="bottom" data-delay="50" data-tooltip="Inversión total 65.000 Bs <br> <strong> Incluye certificado</strong>">De contado</a>
-  <small id="smallgogo1">Precios para 14/03/2017</small>
+    <span id="durationgogo1"><i class="small material-icons left">schedule</i>4 meses</span>
+    <span id="durationgogo1_2"><i class="small material-icons left">mode_edit</i>Libro incluido</span>
+    <span id="durationgogo1_3"><i class="small material-icons left">visibility</i>Opciones de pago</span>
+        <a id="acreditogogo1" class="btn tooltipped teal-lighten-2" data-position="bottom" data-delay="50" data-tooltip="Inscripción 35.000 Bs <br> 4 Mensualidades 10.000 Bs c/u <br> Inicial 45.000 Bs <br><br> <strong>Inversión Total 75.000 Bs</strong>">A credito</a>
+        <a id="decontadogogo1" class="btn tooltipped teal-lighten-2" data-position="bottom" data-delay="50" data-tooltip="Inversión total 65.000 Bs <br> <strong> Incluye certificado</strong>">De contado</a>
+      <small class="truncate" id="smallgogo1">Precios para 14/03/2017</small>
 
 
-  <img id="priceset" src="../images/pricesticker.png" alt="priceset" />
-  </div>
-
+    <img id="priceset" src="../images/pricesticker.png" alt="priceset" />
+</div>
+</div>
   <!-- text to the right -->
-  <div class="col s4 align-right">
-  <h1><div id="titlegogo1">Gogo Loves English</div></h1>
+  <div class="row">
+<div class="col s12 m4">
+  <div id="titlegogo1"><h1>Gogo Loves English</h1></div>
   <p id="textgogo1">Esta nueva edición es un emocionante
     curso elemental de seis niveles para jóvenes estudiantes de inglés americano.
     Los personajes juguetones, juegos emocionantes y canciones pegadizas ayudan a los
     profesores a crear un ambiente divertido y motivador para los niños </p>
-  </div>
+</div>
+</div>
       </div>
     </div>
   </div>
-
+</div>
+</div>
 <!-- Scrollfire -->
-
+<div class="section">
 <div class="row">
 
 <ul id="staggered-test">
-  <div class="col s3 center promo promo-example"><li><i class="large material-icons">grade</i><p class="promo-caption">Divertidas canciones y cantos</h4></li></div>
-  <div class="col s3 center promo promo-example"><li><i class="large material-icons">language</i><p class="promo-caption">Lecciones para el conocimiento intercultural</h4></li></div>
-  <div class="col s3 center promo promo-example"><li><i class="large material-icons">hearing</i><p class="promo-caption">Libros de trabajo utilizando CD de audio</h4></li></div>
-  <div class="col s3 center promo promo-example"><li><i class="large material-icons">replay</i><p class="promo-caption">Flashcards y diversas actividades para el repaso del contenido</h4></li>
+  <div class="col s12 m4 center promo promo-example"><li><i class="large material-icons">grade</i><p class="promo-caption">Divertidas canciones y cantos</h4></li></div>
+  <div class="col s12 m4 center promo promo-example"><li><i class="large material-icons">language</i><p class="promo-caption">Lecciones para el conocimiento intercultural</h4></li></div>
+  <div class="col s12 m4 center promo promo-example"><li><i class="large material-icons">hearing</i><p class="promo-caption">Libros de trabajo utilizando CD de audio</h4></li></div>
+  <div class="col s12 m12 center promo promo-example"><li><i class="large material-icons">replay</i><p class="promo-caption">Flashcards y diversas actividades para el repaso del contenido</h4></li>
   </div>
 
 <!-- Icons under -->
-
 </ul>
+ <!-- container end-->
+ <!-- #main -->
 
-</div>
-</div> <!-- container end-->
 <!-- carousel -->
 
 <div class="carousel carousel-slider center" data-indicators="true">
   <div class="carousel-fixed-item center">
-    <a class="btn waves-effect white grey-text darken-text-2">Deslizar →</a>
+    <a class="btn waves-effect white grey-text darken-text-2 hide-on-med-and-down">Deslizar →</a>
   </div>
   <div class="carousel-item red white-text" href="#one!">
     <h2>Primer Nivel</h2>
-    <p class="white-text">Al niño se le enseña el vocabulario básico del inglés, a la vez
+    <p class="white-text center-align">Al niño se le enseña el vocabulario básico del inglés, a la vez
     que se incentiva para que aprenda, mediante juegos, canciones y otros. Tomando
   en cuenta los siguientes aspectos </p><br>
     <table class="centered">
@@ -140,7 +141,7 @@
   </div>
   <div class="carousel-item amber white-text" href="#two!">
     <h2>Segundo Nivel</h2>
-    <p class="white-text">Al niño se le enseña el vocabulario básico del inglés, a la vez
+    <p class="white-text center-align">Al niño se le enseña el vocabulario básico del inglés, a la vez
     que se incentiva para que aprenda, mediante juegos, canciones y otros. Tomando
   en cuenta los siguientes aspectos </p><br>
     <table class="centered">
@@ -166,7 +167,7 @@
   </div>
   <div class="carousel-item purple white-text" href="#three!">
      <h2>Tercer Nivel</h2>
-     <p class="white-text">Niveles más exigentes, ya que comienza a aprender gramática
+     <p class="white-text center-align">Niveles más exigentes, ya que comienza a aprender gramática
      y expresiones de variada índole, es conversacional. </p><br>
      <table class="centered">
        <thead> <!--table-->
@@ -189,7 +190,7 @@
        </table>   </div>
    <div class="carousel-item blue white-text" href="#four!">
      <h2>Cuarto Nivel</h2>
-     <p class="white-text">Niveles más exigentes, ya que comienza a aprender gramática
+     <p class="white-text center-align">Niveles más exigentes, ya que comienza a aprender gramática
      y expresiones de variada índole, es conversacional. </p><br>
      <table class="centered">
        <thead> <!--table-->
@@ -213,7 +214,7 @@
    </div>
    <div class="carousel-item green white-text" href="#five!">
      <h2>Quinto nivel</h2>
-     <p class="white-text">Completamente Conversacional y se realiza en total inmersión.
+     <p class="white-text center-align">Completamente Conversacional y se realiza en total inmersión.
      El niño realiza exposiciones, traducciones y debates </p><br>
      <table class="centered">
        <thead> <!--table-->
@@ -237,7 +238,7 @@
        </div>
    <div class="carousel-item orange white-text" href="#six!">
      <h2>Sexto nivel</h2>
-     <p class="white-text">Completamente Conversacional y se realiza en total inmersión.
+     <p class="white-text center-align">Completamente Conversacional y se realiza en total inmersión.
      El niño realiza exposiciones, traducciones y debates </p><br>
      <table class="centered">
        <thead> <!--table-->
@@ -267,44 +268,26 @@
     <div class="parallax"><img src="../images/waving_gogo.jpg"></div>
   </div>
 
-
+</div> <!-- #main-container -->
 
 </main>
-<footer>
-<div class="footer">
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">ELH Simon Rodriguez</h5>
-          <p class="grey-text text-lighten-4">
-            <i class="tiny material-icons">location_on</i> Av. Montilla con Calle Carvajal, Edificio La Fuente.	Barinas	5201	Venezuela
-          </br>
-        </br>
-          <i class="tiny material-icons">call</i> 0273-5528615
-</p>
 
+
+
+        <div class="footer-container">
+            <div ng-include="'../includes/footer.htm'"></div>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Social</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/academiaelh">Facebook</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.twitter.com/academiaelh">Twitter</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/academiaelhb">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      <a class="white-text text-lighten-4" href="https://www.instagram.com/versaceversace_am">© <u>Aarón Montoya</u></a>
-      <a class="grey-text text-lighten-4 right" href="#!">Mas informacion</a>
-      </div>
-    </div>
-  </footer>
-</div>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="../js/materialize.min.js"></script>
-  <script type="text/javascript" src="../js/gogo.js"></script>
-</body>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.js"></script>
+        <script type="text/javascript" src="../js/angular.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="../js/materialize.js"></script>
+        <script type="text/javascript" src="../js/gogo.js"></script>
+
+        <script src="../js/main.js"></script>
+
+              <script>
+      var app = angular.module('gogo', [])
+              </script>
+    </body>
 </html>

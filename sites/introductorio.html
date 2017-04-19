@@ -1,32 +1,34 @@
-<!DOCTYPE html>
-  <html lang="es">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
     <head>
-      <!--Importaciones-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Speed Way & Top Notch</title>
+        <meta name="description" content="Precios y descripción para Speed Way & Top Notch Barinas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <!--Importaciones-Google-Materialize-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="../css/introductorio.css" type="text/css" />
-      <link rel="stylesheet" href="../css/animate.css" type="text/css">
-      <!--Disponible para mobiles-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="../css/animate.css" type="text/css" />
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+    <body ng-app="introductorio">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <body>
-      <header>
 
-        <div class="navbar-fixed">
-      <nav>
-    <div class="nav-wrapper blue">
-      <img id="logoelh" src="../images/logo.jpg"/>
-      <a href="../index.html" class="brand-logo"> Academia ELH</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="../index.html">Cursos</a></li>
-        <li><a href="http://www.academiaelh.com.ve/web/index.php/contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-  </div>
-</header>
+        <header>
+            <div ng-include="'../includes/header.htm'"></div>
+      </header>
 
 <main>
   <div class="fixed-action-btn"> <!-- FAB Menu buttons -->
@@ -39,41 +41,53 @@
       <li><a href="../index.html" class="btn-floating blue"><i class="material-icons">home</i></a></li>
     </ul>
   </div>
-
+  <div class="main-container">
+            <div class="main wrapper clearfix">
 <div class="container">
 <h2 class="animated fadeInDown white-text center-align">Horarios</h1>
 
   <div class="row">
-    <div class="col s12 m6 l6">
+    <div class="col s6 m6">
       <h3 id="weekday" class="animated fadeInUp white-text center-align">Lunes a Viernes</h3>
     </div>
-    <div class="col s12 m6 l6 animated fadeInUp white-text center-align">
-      <h3 id="weekends">Sábados</h3>
+    <div class="col s6 m6">
+      <h3 id="weekends" class="animated fadeInUp white-text center-align">Sábados</h3>
     </div>
   </div>
 <!--Pricers-->
 
 <div class="animated fadeIn">
   <div class="row">
-    <div class="col s6 m6 l6">
+    <div class="col s6 m6">
       <img class="responsive-img hoverable animated slideInRight" id="sticker1" src="../images/introductory_weekday_price.png">
       <div class="center-align">
-      <a id="acreditointroductorio1" class="btn tooltipped teal-lighten-2" data-position="bottom" data-delay="50" data-tooltip="Inscripción 35.000 Bs <br> 4 Mensualidades 10.000 Bs c/u <br> Inicial 45.000 Bs <br><br> <strong>Inversión Total 75.000 Bs</strong>">A credito</a>
-      <a id="decontadointroductorio1" class="btn tooltipped teal-lighten-2" data-position="bottom" data-delay="50" data-tooltip="Inversión total 65.000 Bs <br> <strong> Incluye certificado</strong>">De contado</a>
+          <div class="card-panel hide-on-large-only">  
+            <span class="insidecard">
+              <b>A credito</b>: Inscripción 35.000Bs <br> 4 Mensualidades 10.000 Bs c/u <br> 
+              Inicial 45.000 Bs <br><br>Inversión Total 75.000 Bs <br><br><b>De contado</b>:
+              <br>Inversión total 65.000 Bs <br> Incluye certificado</span> <!-- Texto que debe cambiarse cada aumento de precio -->
+            </div>
+      <a id="acreditointroductorio1" class="waves-effect light btn tooltipped teal-lighten-2 hide-on-med-and-down" data-position="bottom" data-delay="50" data-tooltip="Inscripción 35.000 Bs <br> 4 Mensualidades 10.000 Bs c/u <br> Inicial 45.000 Bs <br><br> <strong>Inversión Total 75.000 Bs</strong>">A credito</a>
+      <a id="decontadointroductorio1" class="waves-effect light btn tooltipped teal-lighten-2 hide-on-med-and-down" data-position="bottom" data-delay="50" data-tooltip="Inversión total 65.000 Bs <br> <strong> Incluye certificado</strong>">De contado</a>
     </div>
     </div>
-    <div class="col s2 m6 l6">
+    <div class="col s6 m6">
       <img class="responsive-img hoverable animated slideInDown" id="sticker2" src="../images/introductory_weekend_price.png">
-      <div class="center-align">
-      <a id="acreditointroductorio2" class="btn tooltipped teal-lighten-2" data-position="bottom" data-delay="50" data-tooltip="Inscripción 40.000 Bs <br> 4 Mensualidades 12.000 Bs c/u <br> Inicial 52.000 Bs <br><br> <strong>Inversión Total 88.000 Bs</strong>">A credito</a>
-
-      <a id="decontadointroductorio2" class="btn tooltipped teal-lighten-2" data-position="bottom" data-delay="50" data-tooltip="Inversión total 76.000 Bs <br> <strong> Incluye certificado</strong>">De contado</a>
+      <div class="center-align">                    
+       <div class="card-panel hide-on-large-only">
+            <span class="insidecard"><b>A credito</b>: Inscripción 40.000Bs <br> 4 Mensualidades 12.000 Bs c/u <br> 
+            Inicial 52.000 Bs <br><br> Inversión Total 88.000 Bs<br><br><b>De Contado</b>: 
+            Inversión total 76.000 Bs <br>Incluye certificado</span> <!-- Texto que debe cambiarse cada aumento de precio -->
+            </div>
+      <a id="acreditointroductorio2" class="waves-effect light btn tooltipped teal-lighten-2 hide-on-med-and-down" data-position="bottom" data-delay="50" data-tooltip="Inscripción 40.000 Bs <br> 4 Mensualidades 12.000 Bs c/u <br> Inicial 52.000 Bs <br><br> <strong>Inversión Total 88.000 Bs</strong>">A credito</a>
+      <a id="decontadointroductorio2" class="waves-effect light btn tooltipped teal-lighten-2 hide-on-med-and-down" data-position="bottom" data-delay="50" data-tooltip="Inversión total 76.000 Bs <br> <strong> Incluye certificado</strong>">De contado</a>
     </div>
     </div>
   </div>
 </div>
 
-
+</div>
+</div>
 <!--main buttons first sticker-->
 
 
@@ -180,44 +194,20 @@
 
 </main>
 
-<footer>
-  <div class="footer">
-      <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">ELH Simon Rodriguez</h5> <!-- Links to social pages needed -->
-              <p class="grey-text text-lighten-4">
-                <i class="tiny material-icons">location_on</i> Av. Montilla con Calle Carvajal, Edificio La Fuente.	Barinas	5201	Venezuela
-              </br>
-            </br>
-              <i class="tiny material-icons">call</i> 0273-5528615
-            </p>
-
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Social</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/academiaelh">Facebook</a></li>
-                <li><a class="grey-text text-lighten-3" href="https://www.twitter.com/academiaelh">Twitter</a></li>
-                <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/academiaelhb">Instagram</a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="footer-container">
+            <div ng-include="'../includes/footer.htm'"></div>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-          <a class="white-text text-lighten-4" href="https://www.instagram.com/versaceversace_am">© <u>Aarón Montoya</u></a>
-          <a class="grey-text text-lighten-4 right" href="#!">Mas informacion</a>
-          </div>
-        </div>
-      </div>
-</footer>
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="../js/materialize.min.js"></script>
-      <script type="text/javascript" src="../js/introductorio.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.js"></script>
+        <script type="text/javascript" src="../js/angular.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="../js/materialize.js"></script>
+        <script type="text/javascript" src="../js/introductorio.js"></script>
 
+        <script src="../js/main.js"></script>
 
+              <script>
+      var app = angular.module('introductorio', [])
+              </script>
     </body>
-  </html>
+</html>

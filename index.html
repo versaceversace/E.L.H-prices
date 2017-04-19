@@ -1,98 +1,76 @@
-<!DOCTYPE html>
-  <html lang="es">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
-      <!--Importaciones-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="stylesheet" href="css/style.css" type="text/css" />
-      <link rel="stylesheet" href="css/animate.css" type="text/css">
-      <link rel="stylesheet" href="css/animista.css" type="text/css">
-      <!--Disponible para mobiles-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Precios E.L.H.</title>
+        <meta name="description" content="Precios ELH actualizados">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
+        <!--Disponible para mobiles. I GUESS??????-->
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+    <body ng-app="precios">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <body>
-      <header>
+        <header>
+            <div ng-include="'includes/header.htm'"></div>
+      </header>
 
-        <div class="navbar-fixed">
-      <nav>
-    <div class="nav-wrapper blue">
-      <img id="logoelh" src="images/logo.jpg"/>
-      <a href="index.html" class="brand-logo"> Academia ELH</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="index.html">Cursos</a></li>
-        <li><a href="http://www.academiaelh.com.ve/web/index.php/contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-  </div>
-</header>
-<main>
-<div class="container">
-  <img class="animated slideInUp" id="checklist" src="images/checklist.svg"/>
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+              <img class="animated slideInUp responsive-img hide-on-med-and-down" id="checklist" src="images/checklist.svg"/>
+              <div class="animated fadeIn">
+                  <div class="row">
+                    <div class="col s12 m6 offset-m3">
+                   <div class="card blue center-align">
+                     <div class="card-content white-text">
+                       <span class="card-title center-align">¿Que ofrecemos?</span>
+                       <p>En la Academia E.L.H ofrecemos diversos cursos de Inglés dirigido a distintas
+                         audiencias, utilizando varios métodos para la enseñanza. <br><i><small>Para más información pase el mouse sobre una de las opcioness</small></i>
+                       </p>
+                     </div>
+                     <div class="card-action">
+                       <a class="btn tooltipped teal-lighten-2" data-position="right" data-delay="50" data-tooltip="Niños (de 8 a 12 años en adelante)" href="sites/gogo.html"><b>Gogo Loves English</b></a>
+                       <a class="btn tooltipped teal-lighten-2" data-position="right" data-delay="50" data-tooltip="Adolescentes y Adultos" href="sites/introductorio.html"><b>Speed Way & Top Notch</b></a>
 
-    <div class="animated fadeIn">
-        <div class="row">
-          <div class="col s12 m6">
-         <div class="card blue">
-           <div class="card-content white-text">
-             <span class="card-title center-align">¿Que ofrecemos?</span>
-             <p>En la Academia E.L.H ofrecemos diversos cursos de Inglés dirigido a distintas
-               audiencias, utilizando varios métodos para la enseñanza. <br><i><small>Para más información pase el mouse sobre una de las opcioness</small></i>
-             </p>
-           </div>
-           <div class="card-action">
-             <a class="btn tooltipped teal-lighten-2" data-position="right" data-delay="50" data-tooltip="Niños (de 8 a 12 años en adelante)" href="sites/gogo.html"><b>Gogo Loves English</b></a>
-             <a class="btn tooltipped teal-lighten-2" data-position="right" data-delay="50" data-tooltip="Adolescentes y Adultos" href="sites/introductorio.html"><b>Speed Way & Top Notch</b></a>
-
-           </div>
-         </div>
-       </div>
-      </div>
-    </div>
-</div><!--container end-->
-
-</main>
-<footer>
-  <div class="footer">
-      <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">ELH Simon Rodriguez</h5> <!-- Links to social pages needed -->
-              <p class="grey-text text-lighten-4">
-                <i class="tiny material-icons">location_on</i> Av. Montilla con Calle Carvajal, Edificio La Fuente.	Barinas	5201	Venezuela
-              </br>
-            </br>
-              <i class="tiny material-icons">call</i> 0273-5528615
-            </p>
-
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Social</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/academiaelh">Facebook</a></li>
-                <li><a class="grey-text text-lighten-3" href="https://www.twitter.com/academiaelh">Twitter</a></li>
-                <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/academiaelhb">Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container">
-          <a class="white-text text-lighten-4" href="https://www.instagram.com/versaceversace_am">© <u>Aarón Montoya</u></a>
-          <a class="grey-text text-lighten-4 right" href="#!">Mas informacion</a>
-          </div>
-        </div>
-      </div>
-</footer>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+              </div>
 
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/landing.js"></script>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+
+<div ng-include="'includes/footer.htm'"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.js"></script>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/landing.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+var app = angular.module('precios', [])
+</script>
 
 
     </body>
-  </html>
+</html>
